@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: /bin/bash -c "pip install -r requirements.txt;python3 manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./Kindlekuniya:/code/
     ports:
