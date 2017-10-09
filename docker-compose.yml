@@ -6,5 +6,6 @@ services:
     command: /bin/bash -c "pip install -r requirements.txt;python3 manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./Kindlekuniya:/code/
+      - ./requirements.txt:/code/requirements.txt
     ports:
       - "8000:8000"
